@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-async-client-component */
-'use client'
 import React, { useEffect } from 'react'
 import SideBar from '../sidebar/sideBar'
 import MessageContainer from '../messages/messageContainer'
@@ -17,9 +16,7 @@ const Main = async () => {
         const res = await axiosinstance.get("/users/fetch");
         const user = res.data;
        const userProfile=  dispatch(setProfile(user));
-          console.log(userProfile,"redux m data")
-        } catch (error) {
-        console.error("Error fetching user data:", error);
+          } catch (error) {
       }
     };
   

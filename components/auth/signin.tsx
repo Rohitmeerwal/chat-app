@@ -58,11 +58,9 @@ const SigninForm = () => {
         },
       });
       toast.success("register successfully");
-      console.log(res.data, "api response");
       router.push("/main");
       form.reset();
     } catch (error) {
-      console.error("Internal server error:", error);
       toast.error("something wrong in register");
     }
   };
