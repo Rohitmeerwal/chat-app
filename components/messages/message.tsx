@@ -1,7 +1,8 @@
+
+"use client"
 /* eslint-disable @next/next/no-img-element */
 import { extractTime } from "@/utils/extractTime";
 import useConversation from "@/zustand/useConversation";
-import React from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 

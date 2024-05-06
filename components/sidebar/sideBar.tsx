@@ -1,5 +1,4 @@
-"use client"
-import React from "react";
+;
 import SearchBar from "./searchBar";
 import Conversation from "./conversation";
 import Logout from "./logout";

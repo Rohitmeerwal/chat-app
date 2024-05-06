@@ -1,4 +1,3 @@
-import React from "react";
 import Conversation2 from "./conversatin2";
 import useGetConversations from "./getConversation";
 import { getRandomEmoji } from "@/utils/emoji";

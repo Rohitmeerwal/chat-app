@@ -1,12 +1,9 @@
-"use clinet"
-import React from "react";
+
+"use client"
 import {
   Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
+  DialogContent, 
   DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from "../ui/dialog";
 import { Button } from "../ui/button";
@@ -42,7 +39,7 @@ const Profile = () => {
               </Label>
               <Input
                 id="name"
-                value={userProfile.fullName}
+                defaultValue={userProfile.fullName}
                 className="col-span-3"
 
               />
@@ -53,7 +50,7 @@ const Profile = () => {
               </Label>
               <Input
                 id="username"
-                value={userProfile.userName}
+                defaultValue={userProfile.userName}
                 className="col-span-3"
               />
             </div>

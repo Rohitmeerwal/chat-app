@@ -1,3 +1,4 @@
+"use client"
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-async-client-component */
 import React, { useEffect } from 'react'
@@ -8,7 +9,7 @@ import {setProfile } from '@/redux/reducers/slice';
 import {  useDispatch } from "react-redux";
 
 
-const Main = async () => {
+const Main =  () => {
   const dispatch = useDispatch();
   useEffect(() => {
     const fetchData = async () => {

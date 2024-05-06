@@ -1,8 +1,9 @@
+"use client"
 /* eslint-disable react-hooks/rules-of-hooks */
+
 import axiosinstance from "@/axiosinstance";
 import { LogOut } from "lucide-react";
 import { useRouter } from "next/navigation";
-import React from "react";
 import toast from "react-hot-toast";
 import Profile from "../profile/profile";
 import { Button } from "../ui/button";
