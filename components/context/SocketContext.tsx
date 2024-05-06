@@ -1,3 +1,4 @@
+"use client"
 import { createContext, useState, useEffect, useContext } from "react";
 import io, { Socket } from "socket.io-client"; 
 import { useSelector } from "react-redux";

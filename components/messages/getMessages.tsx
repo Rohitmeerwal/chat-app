@@ -1,3 +1,4 @@
+"use client"
 import axiosinstance from "@/axiosinstance";
 import useConversation from "@/zustand/useConversation";
 import { useEffect, useState } from "react";
