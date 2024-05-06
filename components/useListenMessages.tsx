@@ -1,3 +1,4 @@
+"use client"
 import { useEffect } from "react";
 import useConversation from "../zustand/useConversation";
 import { useSocketContext } from "./context/SocketContext";

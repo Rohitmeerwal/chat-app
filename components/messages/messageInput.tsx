@@ -1,3 +1,4 @@
+"use client"
 import { Send } from "lucide-react";
 import React, { useState } from "react";
 import useSendMessage from "./sendMessage";
