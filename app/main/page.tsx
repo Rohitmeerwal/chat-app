@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import SocketContextProvider from "@/components/context/SocketContext";
 import Main from "@/components/main/main";
 import { store } from "@/redux/store";
