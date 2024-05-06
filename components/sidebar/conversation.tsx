@@ -3,9 +3,14 @@ import Conversation2 from "./conversatin2";
 import useGetConversations from "./getConversation";
 import { getRandomEmoji } from "@/utils/emoji";
 
+
+interface Conversation {
+  _id: string;
+  profilePic: string;
+  fullName: string;
+}
 const Conversation = () => {
-  const { loading, conversations } = useGetConversations();
-  console.log(conversations, "conversations");
+  const { loading, conversations }: { loading: boolean; conversations: Conversation[] } = useGetConversations();
   return (
     <div className="py-2 flex flex-col overflow-auto">
       {conversations.map((conversation, idx) => (

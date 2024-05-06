@@ -25,15 +25,12 @@ const LoginForm = () => {
     },
   });
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    console.log(values, "login >><><><><");
     try {
       const res = await instance.post("/users/login", values);
       toast.success("Login  successfully");
-      console.log(res.data, "api response");
       router.push("/main");
       form.reset();
     } catch (error) {
-      console.error("Internal server error:", error);
       toast.error("something went wrong ");
 
     }

@@ -12,9 +12,7 @@ const useGetConversations = () => {
 			setLoading(true);
 			try {
 				const res = await axiosinstance.get('/user')
-                // const data = JSON.parse(JSON.stringify(res.data));	
-                console.log(res.data, "api usrs41651")		
-				setConversations(res.data);
+                setConversations(res.data);
 			} catch (error) {
 				toast.error("something went wrong to fetch conversation");
 			} finally {
@@ -28,3 +26,7 @@ const useGetConversations = () => {
 	return { loading, conversations };
 };
 export default useGetConversations;
+
+
+
+	
