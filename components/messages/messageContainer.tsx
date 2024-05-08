@@ -7,7 +7,6 @@ import useConversation from "@/zustand/useConversation";
 import { Avatar, AvatarImage } from "../ui/avatar";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
-// vbh dhbcjnfd
 interface SideBarProps {
   className?: string;
   toggleMessageContainer: (show: boolean, chatId?: string | null) => void;
