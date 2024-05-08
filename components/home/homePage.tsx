@@ -1,4 +1,4 @@
-
+"use client"
 import { Button } from "../ui/button";
 import Link from "next/link";
 
@@ -10,8 +10,7 @@ const HomePage = () => {
           <div className=" py-5">
 
           <h1 className="text-3xl font-semibold text-center text-gray-300">
-            Log in to join the conversation or register for a new account in
-            seconds!
+          Ready to join? Log in now or register in seconds to start engaging.
           </h1>
           </div>
           <div className=" flex justify-between">

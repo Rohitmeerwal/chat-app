@@ -1,3 +1,4 @@
+"use clinet"
 import LoginForm from '@/components/auth/login'
 import React from 'react'
 
