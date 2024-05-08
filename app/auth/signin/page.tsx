@@ -1,3 +1,4 @@
+"use client"
 import SigninForm from "@/components/auth/signin";
 import React from "react";
 

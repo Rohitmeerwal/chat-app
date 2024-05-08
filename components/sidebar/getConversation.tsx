@@ -17,6 +17,7 @@ const useGetConversations = () => {
 				toast.error("something went wrong to fetch conversation");
 			} finally {
 				setLoading(false);
+			
 			}
 		};
 

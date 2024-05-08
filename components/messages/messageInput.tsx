@@ -3,7 +3,11 @@ import { Send } from "lucide-react";
 import React, { useState } from "react";
 import useSendMessage from "./sendMessage";
 
-const MessageInput = () => {
+
+interface SideBarProps {
+  className?: string;
+}
+const MessageInput: React.FC<SideBarProps> = ({ className }) => {
   const [message, setMessage] = useState("");
 	const { loading, sendMessage } = useSendMessage();
 
@@ -14,7 +18,7 @@ const MessageInput = () => {
 		setMessage("");
 	};
   return (
-    <form className="px-4 my-3" onSubmit={handleSubmit}>
+    <form className={`px-4 my-3 ${className}`} onSubmit={handleSubmit}>
       <div className="w-full relative">
         <input
           name="message"

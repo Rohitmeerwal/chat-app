@@ -1,5 +1,5 @@
+"use client"
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
 export interface Profile {
   _id: any;
   user: any;

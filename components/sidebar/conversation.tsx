@@ -1,15 +1,25 @@
+"use client";
 import Conversation2 from "./conversatin2";
 import useGetConversations from "./getConversation";
 import { getRandomEmoji } from "@/utils/emoji";
-
 
 interface Conversation {
   _id: string;
   profilePic: string;
   fullName: string;
 }
-const Conversation = () => {
-  const { loading, conversations }: { loading: boolean; conversations: Conversation[] } = useGetConversations();
+interface ConversationProps {
+  toggleMessageContainer: (show: boolean, chatId?: string | null) => void;
+}
+const Conversation: React.FC<ConversationProps> = ({
+  toggleMessageContainer,
+}) => {
+  const {
+    loading,
+    conversations,
+  }: { loading: boolean; conversations: Conversation[] } =
+    useGetConversations();
+
   return (
     <div className="py-2 flex flex-col overflow-auto">
       {conversations.map((conversation, idx) => (
@@ -18,6 +28,7 @@ const Conversation = () => {
           conversation={conversation}
           emoji={getRandomEmoji()}
           lastIdx={idx === conversations.length - 1}
+          toggleMessageContainer={toggleMessageContainer}
         />
       ))}
 
