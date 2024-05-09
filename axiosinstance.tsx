@@ -1,7 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
 import axios from "axios";
 const axiosInstance = axios.create({
-  baseURL: 'https://chat-app-backend-rohitmeerwals-projects.vercel.app/api',
+  baseURL: 'https://chat-app-backend-red.vercel.app/api',
+  // baseURL: 'http://localhost:5512/api',
   withCredentials: true,
 });
 
