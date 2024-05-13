@@ -24,7 +24,7 @@ const SocketContextProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 		let newSocket: Socket | undefined;
 
 		if (userProfile) {
-			newSocket = io("http://localhost:5512", {
+			newSocket = io("https://chat-app-backend-1-pjub.onrender.com", {
 				query: {
 					userId: userProfile._id,
 				},
